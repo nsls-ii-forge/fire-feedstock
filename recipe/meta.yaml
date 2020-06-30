@@ -1,0 +1,38 @@
+{% set name = "fire" %}
+{% set version = "0.3.1" %}
+{% set sha256 = "9736a16227c3d469e5d2d296bce5b4d8fa8d7851e953bda327a455fc2994307f" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  number: 0
+  noarch: python
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
+
+requirements:
+  host:
+    - python
+    - pip
+  run:
+    - python
+    - six
+    - termcolor
+
+test:
+  imports:
+    - fire
+
+about:
+  home: https://github.com/google/python-fire
+  license: Apache-2
+  license_family: Apache
+  license_file: LICENSE
+  summary: Python Fire is a library for creating command line interfaces (CLIs) from absolutely any Python object.
+  doc_url: https://github.com/google/python-fire/blob/master/doc/guide.md
+  dev_url: https://github.com/google/python-fire
