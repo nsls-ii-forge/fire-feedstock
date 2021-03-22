@@ -1,6 +1,6 @@
 {% set name = "fire" %}
-{% set version = "0.3.1" %}
-{% set sha256 = "9736a16227c3d469e5d2d296bce5b4d8fa8d7851e953bda327a455fc2994307f" %}
+{% set version = "0.4.0" %}
+{% set sha256 = "c5e2b8763699d1142393a46d0e3e790c5eb2f0706082df8f647878842c216a62" %}
 
 package:
   name: {{ name|lower }}
