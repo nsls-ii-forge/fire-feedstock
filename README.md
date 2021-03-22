@@ -5,11 +5,13 @@ Home: https://github.com/google/python-fire
 
 Package license: Apache-2
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/nsls-ii-forge/fire-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python Fire is a library for creating command line interfaces (CLIs) from absolutely any Python object.
 
+Development: https://github.com/google/python-fire
 
+Documentation: https://github.com/google/python-fire/blob/master/doc/guide.md
 
 Current build status
 ====================
@@ -72,9 +74,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
